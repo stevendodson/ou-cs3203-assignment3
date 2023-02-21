@@ -7,7 +7,9 @@ public class Numbers {
 		ArrayList<Integer> userArray = new ArrayList<Integer>();
 		System.out.println("Enter integers to be added to the list. Press \"q\" to quit.");
 		int input;
-		while(scan.hasNextInt()) {
+
+		// Get user input and add to userArray
+		while (scan.hasNextInt()) {
 			input = scan.nextInt();
 			userArray.add(input);
 		}
@@ -16,6 +18,8 @@ public class Numbers {
 		System.out.println("The product of the numbers is: " + getListProduct(userArray));
 		System.out.println("The reverse of the numbers is: " + reverseArrayList(userArray));
 	}
+
+	// Compute and return the sum of all elements in an ArrayList<Integer>
 	public static int getListSum(ArrayList<Integer> arr) {
 		int sum = 0;
 		for (int i : arr) {
@@ -23,6 +27,8 @@ public class Numbers {
 		}
 		return sum;
 	}
+
+	// Compute and return the product of all elements in an ArrayList<Integer>
 	public static int getListProduct(ArrayList<Integer> arr) {
 		int product = 1;
 		for (int i : arr) {
