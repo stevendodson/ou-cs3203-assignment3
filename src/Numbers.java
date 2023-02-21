@@ -8,4 +8,11 @@ public class Numbers {
 		}
 		return sum;
 	}
+	public int getListProduct(ArrayList<Integer> arr) {
+		int product = 1;
+		for (int i : arr) {
+			product *= i;
+		}
+		return product;
+	}
 }
