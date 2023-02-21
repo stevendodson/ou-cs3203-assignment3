@@ -14,6 +14,7 @@ public class Numbers {
 		scan.close();
 		System.out.println("The sum of the numbers is: " + getListSum(userArray));
 		System.out.println("The product of the numbers is: " + getListProduct(userArray));
+		System.out.println("The reverse of the numbers is: " + reverseArrayList(userArray));
 	}
 	public static int getListSum(ArrayList<Integer> arr) {
 		int sum = 0;
@@ -28,5 +29,12 @@ public class Numbers {
 			product *= i;
 		}
 		return product;
+	}
+	public static ArrayList<Integer> reverseArrayList(ArrayList<Integer> arr) {
+		ArrayList<Integer> result = new ArrayList<Integer>(arr.size());
+		for (int i = arr.size()-1; i >= 0; --i) {
+			result.add(arr.get(i));
+		}
+		return result;
 	}
 }
