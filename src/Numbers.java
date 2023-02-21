@@ -29,4 +29,11 @@ public class Numbers {
 		}
 		return product;
 	}
+	public static ArrayList<Integer> reverseArrayList(ArrayList<Integer> arr) {
+		ArrayList<Integer> result = new ArrayList<Integer>(arr.size());
+		for (int i = arr.size()-1, arrIndex = 0; i <= 0; --i, ++arrIndex) {
+			result.set(arrIndex, arr.get(i));
+		}
+		return result;
+	}
 }
